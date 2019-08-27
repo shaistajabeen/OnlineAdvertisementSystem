@@ -1,0 +1,165 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Ads.master.cs" Inherits="Advertiser.Ads" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>!!Hoarding Advertising Agency!!</title>
+     <style type="text/css">
+         #myDIV {
+    border: 1px solid black;
+    width: 1000px;
+    height:70px;
+    background-color:Silver;
+    -webkit-animation: mymove 5s infinite; 
+    animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove {
+    50% {font-size: 40px;}
+}
+
+
+@keyframes mymove {
+    50% {font-size: 40px;}
+}
+    body {
+	margin:0;
+	padding:0;
+	font: bold 11px/1.5em Verdana;
+}
+
+h2 {
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+	margin: 0px;
+	padding: 0px 0px 0px 15px;
+}
+ 
+
+	
+	
+/*- Menu Tabs F--------------------------- */
+
+    #tabsF {
+      float:left;
+      width:100%;
+      background:#efefef;
+      font-size:93%;
+      line-height:normal;
+	  border-bottom:1px solid #666;
+      }
+    #tabsF ul {
+	margin:0;
+	padding:10px 10px 0 50px;
+	list-style:none;
+      }
+    #tabsF li {
+      display:inline;
+      margin:0;
+      padding:0;
+      }
+    #tabsF a {
+      float:left;
+      background:url("Image/tableftF.gif") no-repeat left top;
+      margin:0;
+      padding:0 0 0 4px;
+      text-decoration:none;
+      }
+    #tabsF a span {
+      float:left;
+      display:block;
+      background:url("Image/tabrightF.gif") no-repeat right top;
+      padding:5px 15px 4px 6px;
+      color:#666;
+      }
+    /* Commented Backslash Hack hides rule from IE5-Mac \*/
+    #tabsF a span {float:none;}
+    /* End IE5-Mac hack */
+    #tabsF a:hover span {
+      color:#FFF;
+      }
+    #tabsF a:hover {
+      background-position:0% -42px;
+      }
+    #tabsF a:hover span {
+      background-position:100% -42px;
+      }
+	
+	
+	
+
+</style>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+</head>
+ 
+<body style="font-weight: bold">
+<div id="myDIV">
+  <p>On-Line Advertisement</p>
+</div>
+
+    <form id="form1" runat="server">
+    <div>
+     &nbsp;
+        <table style="width: 998px; left: 2px; position: absolute; top: 3px; height: 79px;">
+            <tr>
+                <td style="width: 247900px; height: 20px" colspan="3">
+               
+          <br />
+          <br />
+          <br />
+          <br />
+        <div id="tabsF">
+        
+  <ul>
+    <li><a href="Home.aspx"  title="HOME"><span>HOME</span></a></li>
+    <li><a href="Register.aspx" title="Not Yet a Member Register"><span>REGISTRATION</span></a></li>
+    
+    <li><a href="About Us.aspx" title="ABOUT US"><span>ABOUT US</span></a></li>
+    
+    <li><a href="Contact Us.aspx"  title="CONTACT US"><span>CONTACT US</span></a>&nbsp;</li><li> </li></ul>
+</div>
+                </td>
+            </tr>
+        </table>
+        
+       
+
+        <br />
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <table style="left: 28px; width: 672px; position: absolute; height: 166px; top: 860px;">
+            <tr>
+                <td colspan="3" style="text-align: center">
+                    <span style="color: #0033ff"><span style="color: #0033ff"><span style="color: black">
+                        Cant Find It!Search Now &nbsp;<br />
+                    </span>
+                        <img src="Images/Logo_25gry[1].gif" /><br />
+                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox><br />
+                        <asp:Button ID="Button2" runat="server" Text="SEARCH" /><br />
+                        <br />
+                        <a href="Home.aspx">
+                        <span style="color: #0000ff">HOME</span> </a>|<a href="Contact Us.aspx"><span style="color: #0000cc">CONTACT US</span></a>
+                        |<a href="About Us.aspx"> <span style="color: #0000cc">ABOUT US<span></span></span><br />
+                        </a>
+                        <asp:Label ID="Label14" runat="server" ForeColor="Maroon" Style="left: 167px; top: 773px" Text="     Copyright ©2013-2017 Shaista"
+                        Width="279px"></asp:Label><br />
+                        <span style="color: black">
+                        We are not responsible for the content of external websites. Images featured&nbsp;
+                        on Ats-ads.com are copyright of their respective owners.<br />
+                        </span></span></span>
+                </td>
+            </tr>
+        </table>
+    </form>
+   
+
+</body>
+
+</html>
